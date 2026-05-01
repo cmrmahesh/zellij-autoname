@@ -1,0 +1,14 @@
+[package]
+name = "zellij-autoname"
+version = "0.1.0"
+edition = "2021"
+description = "Auto-rename Zellij tabs based on the focused pane's working directory or running command"
+license = "MIT"
+
+[dependencies]
+zellij-tile = "0.44.1"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

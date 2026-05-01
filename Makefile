@@ -1,5 +1,5 @@
 WASM_TARGET := wasm32-wasip1
-WASM := target/$(WASM_TARGET)/release/zellij_autoname.wasm
+WASM := target/$(WASM_TARGET)/release/zellij-autoname.wasm
 PLUGIN_DIR := $(HOME)/.config/zellij/plugins
 
 .PHONY: all build release debug install uninstall clean fmt check setup
@@ -22,7 +22,7 @@ install: release
 	cp $(WASM) $(PLUGIN_DIR)/
 
 uninstall:
-	rm -f $(PLUGIN_DIR)/zellij_autoname.wasm
+	rm -f $(PLUGIN_DIR)/zellij-autoname.wasm
 
 check:
 	cargo check --target $(WASM_TARGET)

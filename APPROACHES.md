@@ -12,7 +12,7 @@ A Zellij plugin (Rust/WASM) that runs in the background and renames tabs automat
 ```kdl
 // In ~/.config/zellij/config.kdl
 load_plugins {
-    "file:~/.config/zellij/plugins/zellij_autoname.wasm"
+    "file:~/.config/zellij/plugins/zellij-autoname.wasm"
 }
 ```
 

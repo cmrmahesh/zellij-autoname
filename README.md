@@ -40,7 +40,7 @@ Equivalent without Make:
 ```bash
 rustup target add wasm32-wasip1
 cargo build --release --target wasm32-wasip1
-cp target/wasm32-wasip1/release/zellij_autoname.wasm ~/.config/zellij/plugins/
+cp target/wasm32-wasip1/release/zellij-autoname.wasm ~/.config/zellij/plugins/
 ```
 
 Other targets: `make debug`, `make check`, `make fmt`, `make uninstall`, `make clean`.
@@ -56,7 +56,7 @@ layout {
     pane
 
     pane {
-        plugin location="file:~/.config/zellij/plugins/zellij_autoname.wasm" {
+        plugin location="file:~/.config/zellij/plugins/zellij-autoname.wasm" {
             max_length "20"
         }
     }
@@ -69,7 +69,7 @@ layout {
 keybinds {
     shared {
         bind "Ctrl Shift n" {
-            LaunchPlugin "file:~/.config/zellij/plugins/zellij_autoname.wasm" {
+            LaunchPlugin "file:~/.config/zellij/plugins/zellij-autoname.wasm" {
                 floating true
                 max_length "20"
             }
@@ -82,7 +82,7 @@ keybinds {
 
 ```kdl
 plugins {
-    autoname location="file:~/.config/zellij/plugins/zellij_autoname.wasm" {
+    autoname location="file:~/.config/zellij/plugins/zellij-autoname.wasm" {
         max_length "20"
     }
 }
